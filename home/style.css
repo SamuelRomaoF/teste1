@@ -1,0 +1,664 @@
+
+
+
+
+*{
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  
+
+}
+/* Estilo global */
+body {
+  
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #ebebeb !important;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+
+/* navbar */
+header {
+  background-color: #002C5C;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffc72c;
+}
+
+
+
+.cta .button {
+  background-color: #ffc72c;
+  color: #002C5C;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta .button:hover {
+  background-color: #ffdb73;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 120px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+
+
+/* Hero Section */
+#hero {
+  height: 600px;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  background-image: url('img/302746-controle-de-mao-de-obra-em-reformas-entenda-a-importancia-1-1-960x640.jpg');
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+#hero h1 {
+  margin-bottom: 20px;
+}
+#hero p {
+  margin-bottom: 20px;
+}
+
+#hero .btn {
+  margin-top: 20px;
+
+}
+
+.img-fluid {
+  margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+  .img-overlay {
+    opacity: 0; 
+  }
+  
+}
+
+
+/* equipamento */
+
+.titulo-grande {
+  font-size: 0.8rem;
+  
+}
+
+.img-equipamento{
+
+  margin-left: -15%;
+
+}
+
+/* Responsivo para a seção de equipamentos */
+
+@media (max-width: 768px) {
+
+  .img-equipamento {
+    margin-left: 0;
+    width: 100%; 
+  }
+
+
+  .titulo-grande {
+    font-size: 1.2rem;
+  }
+
+
+  .lead-texto,
+  .texto-laudo,
+  .section-header p {
+    font-size: 14px;
+  }
+}
+
+
+/*section laudo*/
+
+
+.texto-laudo{
+  color: #6e6d6d;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.lead-texto{
+  text-align: justify;
+
+}
+
+
+.larger-text {
+  margin-left: -80%;
+  font-size: 35px
+}
+
+.custom-number {
+  color: #2dff03;
+}
+
+
+.card {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-body strong {
+  font-weight: bold;
+}
+
+/* Responsivo para a seção de laudos */
+@media (max-width: 768px) {
+
+  .lead-texto {
+    font-size: 17px; 
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+
+
+  .larger-text {
+    margin-left: 0; 
+    font-size: 25px; 
+  }
+
+
+  .titulo-lead {
+    margin-top: 0.5rem; 
+  }
+
+
+  .texto-laudo {
+    font-size: 17px; 
+  }
+
+  .laudos .row:last-child .lead {
+    font-size: 17px; 
+    line-height: 1.5; 
+  }
+
+}
+
+/* ART Section */
+#art {
+  padding: 50px 0;
+}
+
+.custom-background {
+  background-color: #000000;
+}
+
+
+#art h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #ebebeb;
+}
+
+#art h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ebebeb;
+}
+
+#art p {
+  font-size: 15px;
+  color: #666;
+  color: #ebebeb;
+  
+}
+
+@media (max-width: 768px) {
+  #art .lead {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*laudo tecnico*/
+
+#laudo-tecnico {
+  padding: 100px 0;
+}
+
+#laudo-tecnico .col-md-6.left-column {
+  margin-top: -15%;
+}
+
+#laudo-tecnico .laudo-img {
+  max-width: 50px;
+  margin-right: 20px;
+  margin-top: -11%;
+}
+
+#laudo-tecnico .laudo-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #ebebeb;
+  margin-top: 150px;
+}
+
+#laudo-tecnico .laudo-subtitle {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ebebeb;
+}
+
+#laudo-tecnico .laudo-text {
+  font-size: 15px;
+  color: #666;
+  color: #ebebeb;
+}
+
+#laudo-tecnico .laudo-tecnico-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #laudo-tecnico .col-md-6.left-column {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  #laudo-tecnico .laudo-img {
+    max-width: 30px;
+    margin-right: 10px;
+    margin-top: -50px;
+  }
+
+  #laudo-tecnico .laudo-title {
+    font-size: 35px;
+    margin-top: 100px;
+  }
+}
+
+/* laudo obra*/
+
+.laudo-tecnico-pos-obra {
+  padding: 50px 0;
+}
+
+.laudo-tecnico-pos-obra h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+.laudo-tecnico-pos-obra p {
+  font-size: 18px;
+  color: #666;
+}
+
+.laudo-tecnico-pos-obra .btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.laudo-tecnico-pos-obra .btn:hover {
+  background-color: #c82333;
+}
+
+.laudo-tecnico-pos-obra img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.order-md-2 {
+  order: 2;
+}
+
+.order-md-1 {
+  order: 1;
+}
+
+/* Responsivo */
+
+@media (max-width: 767.98px) {
+  .order-md-2 {
+    order: 1;
+  }
+
+  .order-md-1 {
+    order: 2;
+  }
+
+  .laudo-tecnico-pos-obra img {
+    margin-bottom: 20px;
+
+  }
+  #imagem-laudo{
+    margin-left: -2px;
+  }
+  .laudo-tecnico-pos-obra .col-md-6 {
+    text-align: center;
+    padding-right: 10px;
+  }
+}
+
+
+/*CONTATO*/
+.contato{
+  height: 650px;
+  
+}
+
+.btn-lg {
+  width: 250px;
+}
+
+.text-to-move p {
+  font-size: 16px;
+  color: #666;
+  margin-left: 0%;
+}
+
+.text-to-move #contato-h2{
+  font-size: 50px;
+  margin-left:  10%;
+  margin-top: -60px;
+}
+
+
+.card-contato:hover {
+  transform: scale(1);
+}
+
+
+.contato {
+  background-image: url('https://i.im.ge/2024/05/27/Ka4KTm.depositphotos-430556910-stock-photo-male-worker-or-builder-in.jpeg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.text-to-move {
+  margin-left: -15%
+}
+
+.container-contato {
+  
+  width: 300px;
+  height: 450px;
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+
+.texto-abaixo-botoes {
+  margin-top: 15px;
+  color: #999;
+  font-size: 12px;
+  
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  .contato {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-to-move {
+    text-align: center;
+  }
+
+  .text-to-move #contato-h2 {
+    font-size: 30px;
+    margin-top: -30px;
+  }
+
+  .text-to-move p {
+    font-size: 14px;
+  }
+
+  .btn-lg {
+    width: 200px;
+  }
+
+  .card-contato {
+    position: relative;
+    margin-top: 50px;
+    width: auto;
+    max-width: 300px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    margin-left: -50%;
+  }
+
+  .container-contato{
+    margin-left: -5%;
+  }
+
+
+  .position-absolute {
+    display: none;
+  }
+}
+
+
+
+/* Estilos seguranca */
+.seguranca {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+
+.seguranca h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.seguranca p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+  .seguranca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  .seguranca .col-lg-6 {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .seguranca img {
+    width: 100%;
+    max-width: 300px;
+    order: 1;
+  }
+
+  .seguranca h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .seguranca p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+
+
+/* Rodapé */
+.footer {
+  background-color: #5c5c5c;
+  color: white;
+}
+
+.footer img {
+  max-width: 100px;
+  height: auto;
+}
+
+.contact-info p {
+  margin: 0; /* Remove o espaço extra ao redor dos parágrafos */
+}
+
+.footer ul {
+  flex-direction: column; /* Altera a direção para coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Adiciona espaço entre os links */
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Transição suave de 0.3 segundos */
+}
+
+.footer ul li a:hover {
+  color: #fff; /* Cor branca ao passar o mouse */
+}
+
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Transição suave de 0.3 segundos */
+}
+
+.footer a:hover {
+  color: #fff; /* Cor branca ao passar o mouse */
+}
+
+.contact-info {
+  text-align: left;
+}
+
+
+@media (max-width: 768px) {
+  /* Ajuste o layout flexbox para os itens do rodapé */
+  .footer ul {
+    flex-direction: row; /* Altera a direção para linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin-top: 20px; /* Adiciona um espaçamento acima do rodapé */
+  }
+
+  /* Ajusta o estilo dos links do rodapé */
+  .footer ul li {
+    margin-right: 15px; /* Adiciona espaçamento entre os itens */
+  }
+
+  /* Ajusta o estilo do texto de informações de contato */
+    .contact-info {
+      margin-left: 90px;
+    }
+    .footer img {
+      margin-left: 150px;
+    }
+  }
+
